@@ -1,3 +1,4 @@
+
 # Intro to SASS
 
 Course related material HTML / SCSS
@@ -21,4 +22,5 @@ A clean slate for a SASS setup. Demonstrating some variables, nesting and mixins
 
 ## License
 
-MIT
+
+
