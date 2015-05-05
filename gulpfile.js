@@ -36,17 +36,16 @@ gulp.task('scripts', function () {
 // Compass SASS
 
 gulp.task('sass', function(){
-	return gulp.src('src/sass/styles.scss')
-	.pipe(sass({
+	return sass('src/sass/styles.scss', {
 		compass:true,
 		style:'compressed'
-	}))
+	})
 	.on('error', function (err) {console.log(err.message); })
 	.pipe(gulp.dest('assets/css'))
 });
 
 // Default task
 
-gulp.task( 'default', ['lint', 'scripts', 'sass','watch']);
+gulp.task( 'default', ['lint', 'scripts', 'watch', 'sass']);
 
 
